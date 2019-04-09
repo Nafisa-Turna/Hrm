@@ -1,0 +1,219 @@
+{% extends 'dashboard/index.html' %}
+{% block main_content %}
+{% load static %}
+
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h4 class="page-title">Add Employee</h4>
+                        <div class="ml-auto text-right">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-6">
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Personal Information</h4>
+                                <div class="form-group row">
+                                   
+                                    <label class="col-sm-3 text-right control-label col-form-label">Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="fname" placeholder="name Here">
+                                    </div>
+                                 </div>
+
+                                <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Father's name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fname" placeholder="name here">
+                                        </div>
+                                </div>       
+    
+                                <div class="form-group row">
+                                    <label class="col-sm-3 text-right control-label col-form-label">Gender</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation1">Male</label>
+                                        </div>
+                                         <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation2">Female</label>
+                                        </div>
+                                         <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation3">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                <label class="col-sm-3 text-right control-label col-form-label">Date of birth</label>
+                                    <div class="col-md-9">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control mydatepicker" placeholder="mm/dd/yyyy">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Phone Number</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fname" placeholder="contact number">
+                                        </div>
+                                </div> 
+                                <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-right control-label col-form-label">Permanent address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                 </div>
+                                <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-right control-label col-form-label">Local address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                 </div>
+                            <h4 class="card-title">Account login</h4>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 text-right control-label col-form-label">Email</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="fname" placeholder="example@email.com">
+                                    </div>
+                                 </div>
+                                <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Password</label>
+                                        <div class="col-sm-9">
+                                            <input type="password" class="form-control" id="fname" placeholder="password">
+                                        </div>
+                                 </div> 
+
+                            </div>
+                           
+                        </div>
+                    
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Company Details</h4>
+                                <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Employee ID</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fname" placeholder="id number">
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label class="col-md-3 m-t-15">Department</label>
+                                        <div class="col-md-9">
+                                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                                <option>Select</option>
+                                                <option value="PH">software</option>
+                                                <option value="HR">Human Resource</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label class="col-md-3 m-t-15">Designation</label>
+                                        <div class="col-md-9">
+                                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                                <option>Select</option>
+                                                <option value="PH">junior developer</option>
+                                                <option value="HR">senior developer</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Date of joining</label>
+                                            <div class="col-md-9">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control mydatepicker" placeholder="mm/dd/yyyy">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                            </div>
+                                 </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                    <h4 class="card-title">Account Information</h4>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Account holder name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fname" placeholder="account holder name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Account number</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fname" placeholder="account number">
+                                        </div>
+                                     </div>  
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Bank name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fname" placeholder="bank name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Branch</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="fname" placeholder="branch">
+                                        </div>
+                                     </div>      
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+          <!-- editor -->
+                    <div class="col-13">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Documents</h3>
+                                        <label class="col-md-2">Resume</label>
+                                        <div class="col-md-5">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                <label class="custom-file-label" style="background-color:rgb(198, 231, 224)" for="validatedCustomFile">Select file...</label>
+                                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                            </div>
+                                        </div> 
+                            </div>
+                        </div>
+                    </div>
+                        
+                <div class="border-top">
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+             </div>   
+            </div>
+       
+{% endblock main_content %}

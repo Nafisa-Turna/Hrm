@@ -1,0 +1,64 @@
+{% extends 'dashboard/index.html' %}
+{% block main_content %}
+{% load static %}
+
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-md-10">
+                
+          <!-- Tabs -->
+<div class="card">
+         
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <!-- <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Post list</span></a> </li> -->
+            <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">Employees List</span></a> </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content tabcontent-border">
+            <div class="tab-pane active" id="home" role="tabpanel">
+                <div class="p-20">
+                
+                        <div class="card">
+                                <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Employee ID</th>
+                                          <th scope="col">Name</th>
+                                          <th scope="col">Designation</th>
+                                          <th scope="col">Status</th>
+                                          <th scope="col">Action</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                            <tr>
+                                              <th scope="row">1</th>
+                                              <td>mark</td>
+                                              <td>Assistant Manager</td>
+                                              <td class="text-success">Active</td>
+                                              <td>
+                                                <button type="button" class="btn btn-primary btn-sm">View/Edit</button>
+                                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                </table>
+                            </div>
+                          
+                         </div>
+                     </div>            
+                
+                 </div>
+             </div>  
+         </div>
+    </div>     
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+
+<!-- ============================================================== -->
+<!-- End Page wrapper  -->
+<!-- ============================================================== -->
+{% endblock main_content %}
